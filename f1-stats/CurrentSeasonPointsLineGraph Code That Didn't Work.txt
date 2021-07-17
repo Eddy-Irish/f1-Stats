@@ -1,0 +1,98 @@
+import React from 'react';
+import '../../index.css';
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
+
+const seasonData = [
+    {
+        name: "BHR",
+        ver: 18,
+        ham: 25,
+        per: 10,
+        bot: 16
+    },
+    {
+        name: "EMI",
+        ver: 43,
+        ham: 44,
+        per: 10,
+        bot: 16
+    },
+    {
+        name: "POR",
+        ver: 61,
+        ham: 69,
+        per: 22,
+        bot: 32
+    },
+    {
+        name: "ESP",
+        ver: 80,
+        ham: 94,
+        per: 32,
+        bot: 47
+    },
+    {
+        name: "MON",
+        ver: 105,
+        ham: 101,
+        per: 44,
+        bot: 47
+    },
+    {
+        name: "AZE",
+        ver: 105,
+        ham: 101,
+        per: 69,
+        bot: 47
+    },
+    {
+        name: "FRA",
+        ver: 131,
+        ham: 116,
+        per: 84,
+        bot: 59
+    },
+    {
+        name: "STY",
+        ver: 156,
+        ham: 135,
+        per: 96,
+        bot: 74
+    },
+    {
+        name: "AUS",
+        ver: 182,
+        ham: 150,
+        per: 104,
+        bot: 92
+    }
+];
+
+const CurrentSeasonPointsLineGraph = () => {
+    return (
+            <LineChart
+                width={1000}
+                height={750}
+                data={seasonData}
+                margin={{
+                    top: 5,
+                    right: 30,
+                    left: 20,
+                    bottom: 5
+                }}
+            >
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis dataKey="name" />
+                <YAxis yAxisId="left" />
+                <YAxis yAxisId="right" orientation="right" />
+                <Tooltip />
+                <Legend />
+                <Line yAxisId="left" type="monotone" datakey="ver" stroke="#d49f0d" />
+                <Line yAxisId="right" type="monotone" datakey="ham" stroke="#15dde8" />
+                {/* <Line yAxisId="left" type="monotone" datakey="per" stroke="#1a15a3" activeDot={{ r: 8 }} /> */}
+                {/* <Line yAxisId="left" type="monotone" datakey="bot" stroke="#96afb5" activeDot={{ r: 8 }} />    */}
+            </LineChart>
+    );
+};
+
+export default CurrentSeasonPointsLineGraph;
