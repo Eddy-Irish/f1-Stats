@@ -8,6 +8,9 @@ import Constructors from './Views/Constructors';
 import IndividualSeasons from './Views/IndividualSeasons';
 import CurrentSeason from './Views/CurrentSeason';
 import SeasonsOverTime from './Views/SeasonsOverTime';
+import Create from './Views/Create';
+import Edit from './Views/Edit';
+import RecordList from './Views/RecordList';
 import logo from './logo.svg';
 import './App.css';
 
@@ -25,6 +28,9 @@ function App() {
             <Route path='/individual-seasons' component={IndividualSeasons} />
             <Route path='/current-season' component={CurrentSeason} />
             <Route path='/seasons-over-time' component={SeasonsOverTime} />
+            <Route path='/create' component={Create} />
+            <Route path='/edit' component={Edit} />
+            <Route path='/record-list' component={RecordList} />
           </Switch>
       </Router>
     </div>

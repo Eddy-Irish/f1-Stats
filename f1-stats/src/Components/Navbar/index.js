@@ -33,6 +33,15 @@ const Navbar = () => {
                     <NavLink to='/seasons-over-time' activeStyle>
                         F1 Seasons Over Time
                     </NavLink>
+                    <NavLink to='/create' activeStyle>
+                        Create Record
+                    </NavLink>
+                    <NavLink to='/edit' activeStyle>
+                        Edit Record
+                    </NavLink>
+                    <NavLink to='/record-list' activeStyle>
+                        Records List
+                    </NavLink>
                     <NavLink to='/about-me' activeStyle>
                         About Me
                     </NavLink>
