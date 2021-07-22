@@ -11,6 +11,8 @@ import SeasonsOverTime from './Views/SeasonsOverTime';
 import Create from './Views/Create';
 import Edit from './Views/Edit';
 import RecordList from './Views/RecordList';
+import AddLapTime from './Views/AddLapTime';
+import LapTimesList from './Views/LapTimesList';
 import logo from './logo.svg';
 import './App.css';
 
@@ -31,6 +33,8 @@ function App() {
             <Route path='/create' component={Create} />
             <Route path='/edit' component={Edit} />
             <Route path='/record-list' component={RecordList} />
+            <Route path='/historical-lap-times' component={LapTimesList} />
+            <Route path='/add-lap-time-data' component={AddLapTime} />
           </Switch>
       </Router>
     </div>

@@ -33,6 +33,12 @@ const Navbar = () => {
                     <NavLink to='/seasons-over-time' activeStyle>
                         F1 Seasons Over Time
                     </NavLink>
+                    <NavLink to='/historical-lap-times' activeStyle>
+                        Historical Lap Times
+                    </NavLink>
+                    <NavLink to='/add-lap-time-data' activeStyle>
+                        Add Lap Time Data
+                    </NavLink>
                     <NavLink to='/create' activeStyle>
                         Create Record
                     </NavLink>
@@ -40,7 +46,7 @@ const Navbar = () => {
                         Edit Record
                     </NavLink>
                     <NavLink to='/record-list' activeStyle>
-                        Records List
+                        Test Data List
                     </NavLink>
                     <NavLink to='/about-me' activeStyle>
                         About Me
