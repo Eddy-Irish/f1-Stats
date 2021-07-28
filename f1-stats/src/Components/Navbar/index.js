@@ -39,15 +39,6 @@ const Navbar = () => {
                     <NavLink to='/add-lap-time-data' activeStyle>
                         Add Lap Time Data
                     </NavLink>
-                    <NavLink to='/create' activeStyle>
-                        Create Record
-                    </NavLink>
-                    <NavLink to='/edit' activeStyle>
-                        Edit Record
-                    </NavLink>
-                    <NavLink to='/record-list' activeStyle>
-                        Test Data List
-                    </NavLink>
                     <NavLink to='/about-me' activeStyle>
                         About Me
                     </NavLink>

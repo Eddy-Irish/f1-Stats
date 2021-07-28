@@ -35,17 +35,19 @@ export default function LapTimesList() {
               <th>Pole</th>
               <th>Fastest Lap</th>
             </tr>
-            <tr>
-              {data.lapTimes.map(lapTime => (
-                <th>{lapTime.location}
-                    {lapTime.year}
-                    {lapTime.pole}
-                    {lapTime.fastestLap}
-                </th>
-              ))}
-            </tr>
-          </thead>
-          <tbody></tbody>
+            </thead>
+            <tbody>
+              <tr>  
+                {data.lapTimes.map(lapTime => (
+                  <>
+                    <th>{lapTime.location}</th>
+                    <th>{lapTime.year}</th>
+                    <th>{lapTime.pole}</th>
+                    <th>{lapTime.fastestLap}</th>
+                  </>
+                ))}
+              </tr>
+          </tbody>
         </table>
       </div>
     );

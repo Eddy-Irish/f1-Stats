@@ -1,5 +1,14 @@
 import React, { Component } from "react";
 import axios from 'axios';
+import { gql, useQuery, QueryInput } from '@apollo/client';
+
+//const { MongoClient } = require("mongodb");
+
+// Connection string goes below in 'uri'
+// const uri = ""
+
+// Create new Mongo Client
+// const client = new MongoClient(uri);
 
 export default class AddLapTime extends Component {
   // This is the constructor that stores the data.
