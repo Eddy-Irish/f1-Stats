@@ -1,6 +1,12 @@
 import styled from 'styled-components';
 import React from 'react';
 
+// ** Need to figure out if I can properly place the image behind the body of the page
+// So far, everywhere I've tried putting it in App.js's return() results in the image
+// being BETWEEN the elements of the page, and not BEHIND them.
+//
+// I'm sure there's a way to do it, just gotta figure it out next time I work on this.
+
 const StyledImage = styled.img`
     width: 100%;
     height: 100px;
