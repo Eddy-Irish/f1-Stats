@@ -11,9 +11,9 @@ import SeasonsOverTime from './Views/SeasonsOverTime';
 import Create from './Views/Create';
 import Edit from './Views/Edit';
 import RecordList from './Views/RecordList';
-import AddLapTime from './Views/AddLapTime';
 import LapTimesList from './Views/LapTimesList';
-import logo from './logo.svg';
+import Footer from './Components/Footer';
+import BackgroundImage from './Images/BackgroundImage';
 import './App.css';
 
 function App() {
@@ -34,9 +34,9 @@ function App() {
             <Route path='/edit' component={Edit} />
             <Route path='/record-list' component={RecordList} />
             <Route path='/historical-lap-times' component={LapTimesList} />
-            <Route path='/add-lap-time-data' component={AddLapTime} />
-          </Switch>
+          </Switch>  
       </Router>
+      <Footer></Footer>
     </div>
   );
 }

@@ -9,6 +9,7 @@ import { ApolloClient,
          HttpLink,
          InMemoryCache } from '@apollo/client';
 
+
 export const APP_ID = "f1-stats-mongo-realm-fkrpb";
 const graphqlUri = `https://us-east-1.aws.realm.mongodb.com/api/client/v2.0/app/f1-stats-mongo-realm-fkrpb/graphql`
 

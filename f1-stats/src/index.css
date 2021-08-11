@@ -33,6 +33,17 @@ div.scrollmenu li {
   padding-inline: 5px;
 }
 
+div.container {
+  position: relative;
+  background-image: url("https://e0.365dm.com/13/08/2048x1152/action-formula-1-grand-prix-atmosphere-belgium-scenic-ayrton-senna-mclaren-spa_2987057.jpg");
+}
+
+img {
+  width: 100%;
+  height:auto;
+  opacity: 0.25;
+}
+
 .about {
   line-height: 1.5;
   text-align: center;
