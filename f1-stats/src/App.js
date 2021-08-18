@@ -26,13 +26,12 @@ function App() {
             <Route path='/about-me' component={AboutMe} />
             <Route path='/all-time-records' component={AllTimeRecords} />
             <Route path='/constructors' component={Constructors} />
-            <Route path='/about-me' component={AboutMe} />
             <Route path='/individual-seasons' component={IndividualSeasons} />
             <Route path='/current-season' component={CurrentSeason} />
             <Route path='/seasons-over-time' component={SeasonsOverTime} />
-            <Route path='/create' component={Create} />
-            <Route path='/edit' component={Edit} />
-            <Route path='/record-list' component={RecordList} />
+            {/* <Route path='/create' component={Create} /> */}
+            {/* <Route path='/edit' component={Edit} /> */}
+            {/* <Route path='/record-list' component={RecordList} /> */}
             <Route path='/historical-lap-times' component={LapTimesList} />
           </Switch>  
       </Router>

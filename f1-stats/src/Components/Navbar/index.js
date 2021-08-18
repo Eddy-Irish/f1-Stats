@@ -36,9 +36,6 @@ const Navbar = () => {
                     <NavLink to='/historical-lap-times' activeStyle>
                         Historical Lap Times
                     </NavLink>
-                    <NavLink to='/add-lap-time-data' activeStyle>
-                        Add Lap Time Data
-                    </NavLink>
                     <NavLink to='/about-me' activeStyle>
                         About Me
                     </NavLink>

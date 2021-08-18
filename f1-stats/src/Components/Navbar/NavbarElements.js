@@ -18,6 +18,8 @@ export const NavLink = styled(Link)`
   display: flex;
   align-items: center;
   text-decoration: none;
+  font-family: Palatino Linotype;
+  font-weight: bold;
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;

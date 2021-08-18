@@ -1,31 +1,16 @@
-import React, { Component } from "react";
-import { gql, useQuery } from '@apollo/client';
+import React from "react";
+import MonacoLapTimesLineGraph from '../Components/Graphs/MonacoLapTimesLineGraph';
 
-
-const GET_LAPS = gql`
-  query GetLaps {
-    lapTimes {
-      _id
-      fastestLap
-      location
-      pole
-      year
-    }
-  }
-`;
 
 export default function LapTimesList() {
 
-  const { loading, error, data } = useQuery(GET_LAPS);
-    if(loading) {
-      return <div>LOADING...</div>
-    }
-    if(error){
-      return <div>encountered and error, dummy: {error}</div>
-    }
 
     return (
       <div>
+        {/*
+            This Code was used a test to ensure that I could query and display information
+            from my MongoDB Atlas Cluster using the Realm App
+        
         <h3>Historical Pole and Fastest Lap Times From the Monaco Grand Prix</h3>
         <table className="table table-striped" style={{ marginTop: 20 }}>
           <thead>
@@ -36,19 +21,27 @@ export default function LapTimesList() {
               <th>Fastest Lap</th>
             </tr>
             </thead>
-            <tbody>
-              <tr>  
+  
                 {data.lapTimes.map(lapTime => (
-                  <>
-                    <th>{lapTime.location}</th>
-                    <th>{lapTime.year}</th>
-                    <th>{lapTime.pole}</th>
-                    <th>{lapTime.fastestLap}</th>
-                  </>
+                  <tbody>
+                    <tr>
+                      <th>{lapTime.location}</th>
+                      <th>{lapTime.year}</th>
+                      <th>{lapTime.pole}</th>
+                      <th>{lapTime.fastestLap}</th>
+                    </tr>
+                  </tbody>
                 ))}
-              </tr>
-          </tbody>
-        </table>
+          
+        </table> */}
+        <h3 id="monacoTimesHeader"> Evolution of Pole Position and Fastest Lap Times at the Monaco Grand Prix</h3>
+        <p id="monacoTimesParagraph">Times from before 1986 were not listed as the circuit had different, and much shorter, configurations before 1986 
+           (The Fastest Lap from 1997 is not included due it being a wet race) </p>
+        <div class="grid-container">
+          <div class="grid-item">
+            <MonacoLapTimesLineGraph />
+          </div>
+        </div>  
       </div>
     );
 }

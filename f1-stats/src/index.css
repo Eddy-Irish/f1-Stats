@@ -49,3 +49,11 @@ img {
   text-align: center;
   width: fit-content;
 }
+
+#monacoTimesHeader {
+  text-align: center;
+}
+
+#monacoTimesParagraph {
+  text-align: center;
+}
